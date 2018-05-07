@@ -1,3 +1,272 @@
-"Thu, 03 May 2018 11:15:39" - root - INFO - server started at http://127.0.0.1:9000...
-"Thu, 03 May 2018 11:18:22" - root - INFO - server started at http://127.0.0.1:9000...
-"Thu, 03 May 2018 11:20:45" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 15:50:51" - root - INFO - found model: user_info (table: user_info)
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_id ==> <IntegerField, bigint:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_name ==> <StringField, varchar(100):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: password ==> <StringField, varchar(100):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: create_date ==> <DateTimeField, datetime:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: comment ==> <TextField, text:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Fri, 04 May 2018 15:50:51" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 15:50:51" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 15:51:02" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 15:51:02" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 15:51:02" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 15:51:02" - root - DEBUG - using default value for created_at: 1525420262.7434886
+"Fri, 04 May 2018 15:51:02" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Fri, 04 May 2018 15:53:57" - root - INFO - found model: user_info (table: user_info)
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_id ==> <IntegerField, bigint:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(100):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: password ==> <StringField, varchar(100):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: create_date ==> <DateTimeField, datetime:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: comment ==> <TextField, text:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 15:53:57" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 15:53:57" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 15:54:06" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 15:54:06" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 15:54:06" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 15:54:06" - root - DEBUG - using default value for created_at: 1525420446.188981
+"Fri, 04 May 2018 15:54:06" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Fri, 04 May 2018 16:06:23" - root - INFO - found model: user_info (table: user_info)
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_id ==> <IntegerField, bigint:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_name ==> <StringField, varchar(100):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: password ==> <StringField, varchar(100):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: create_date ==> <DateTimeField, datetime:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: comment ==> <TextField, text:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:06:23" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 16:06:23" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 16:06:26" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 16:06:26" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 16:06:26" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 16:06:26" - root - DEBUG - using default value for created_at: 1525421186.5197177
+"Fri, 04 May 2018 16:06:26" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Fri, 04 May 2018 16:12:46" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:12:46" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:12:46" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:12:46" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:12:46" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 16:12:46" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 16:13:02" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 16:13:02" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 16:13:02" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 16:13:02" - root - DEBUG - using default value for created_at: 1525421582.627374
+"Fri, 04 May 2018 16:13:02" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Fri, 04 May 2018 16:15:48" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:15:48" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:15:48" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:15:48" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:15:48" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 16:15:48" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 16:33:57" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:33:57" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:33:57" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:33:57" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:33:57" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 16:33:57" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 16:34:49" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 16:34:49" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 16:34:49" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 16:34:49" - root - DEBUG - using default value for created_at: 1525422889.298111
+"Fri, 04 May 2018 16:38:00" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Fri, 04 May 2018 16:45:48" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:45:48" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:45:48" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:45:48" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:45:48" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 16:45:48" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 16:45:51" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 16:45:51" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 16:45:51" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 16:45:51" - root - DEBUG - using default value for created_at: 1525423551.7079988
+"Fri, 04 May 2018 16:51:37" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 16:51:37" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 16:51:37" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 16:51:37" - root - DEBUG - using default value for created_at: 1525423897.226761
+"Fri, 04 May 2018 16:53:39" - root - INFO - found model: users (table: users)
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: admin ==> <BooleanField, tinyint:None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:53:39" - root - INFO - found model: Blog (table: blogs)
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:53:39" - root - INFO - found model: Comment (table: comments)
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Fri, 04 May 2018 16:53:39" - root - INFO -   found mapping: created_at ==> <FloatField, double:None>
+"Fri, 04 May 2018 16:53:39" - root - INFO - create database connection pool...
+"Fri, 04 May 2018 16:53:39" - root - INFO - server started at http://127.0.0.1:9000...
+"Fri, 04 May 2018 16:55:54" - root - DEBUG - using default value for admin: 0
+"Fri, 04 May 2018 16:55:54" - root - DEBUG - using default value for name: 
+"Fri, 04 May 2018 16:55:54" - root - DEBUG - using default value for image: 
+"Fri, 04 May 2018 16:55:54" - root - DEBUG - using default value for created_at: 1525424154.805494
+"Fri, 04 May 2018 16:55:54" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
