@@ -906,3 +906,331 @@
 "Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
 "Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
 "Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:12:26" - root - INFO - Request: GET /
+"Tue, 08 May 2018 17:12:26" - root - INFO - check user: GET /
+"Tue, 08 May 2018 17:12:26" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:12:26" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:12:26" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:12:26" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:12:26" - root - INFO - call with args: {}
+"Tue, 08 May 2018 17:12:26" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 17:12:26" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:12:39" - root - INFO - Request: GET /mange/ccc
+"Tue, 08 May 2018 17:12:39" - root - INFO - check user: GET /mange/ccc
+"Tue, 08 May 2018 17:12:39" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:12:39" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:12:39" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:12:39" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:12:49" - root - INFO - Request: GET /manage/ccc
+"Tue, 08 May 2018 17:12:49" - root - INFO - check user: GET /manage/ccc
+"Tue, 08 May 2018 17:12:49" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:12:49" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:12:49" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:12:49" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:12:52" - root - INFO - Request: GET /manage/ccc
+"Tue, 08 May 2018 17:12:52" - root - INFO - check user: GET /manage/ccc
+"Tue, 08 May 2018 17:12:52" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:12:52" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:12:52" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:12:52" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:12:57" - root - INFO - Request: GET /manage
+"Tue, 08 May 2018 17:12:57" - root - INFO - check user: GET /manage
+"Tue, 08 May 2018 17:12:57" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:12:57" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:12:57" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:12:57" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:13:01" - root - INFO - Request: GET /manage
+"Tue, 08 May 2018 17:13:01" - root - INFO - check user: GET /manage
+"Tue, 08 May 2018 17:13:01" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:13:01" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:13:01" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:13:01" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:13:06" - root - INFO - Request: GET /
+"Tue, 08 May 2018 17:13:06" - root - INFO - check user: GET /
+"Tue, 08 May 2018 17:13:06" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 17:13:06" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 17:13:06" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 17:13:06" - root - INFO - Response handler...
+"Tue, 08 May 2018 17:13:06" - root - INFO - call with args: {}
+"Tue, 08 May 2018 17:13:06" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 17:13:06" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:28:52" - root - INFO - Request: GET /api/users
+"Tue, 08 May 2018 18:28:52" - root - INFO - check user: GET /api/users
+"Tue, 08 May 2018 18:28:52" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:28:52" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:28:52" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:28:52" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:28:52" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:28:52" - root - INFO - SQL: select count(id) _num_ from `users`
+"Tue, 08 May 2018 18:28:52" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:28:52" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` order by created_at desc limit ?, ?
+"Tue, 08 May 2018 18:28:52" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:30:45" - root - INFO - Request: GET //manage/blogs/create
+"Tue, 08 May 2018 18:30:45" - root - INFO - check user: GET //manage/blogs/create
+"Tue, 08 May 2018 18:30:45" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:30:45" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:30:45" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:30:45" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:04" - root - INFO - Request: GET /
+"Tue, 08 May 2018 18:31:04" - root - INFO - check user: GET /
+"Tue, 08 May 2018 18:31:04" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:04" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:31:04" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:31:04" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/css/uikit.min.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/css/uikit.min.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:31:05" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:31:05" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/css/uikit.min.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/css/uikit.min.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/css/uikit.gradient.min.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/css/uikit.gradient.min.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/css/awesome.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/css/awesome.css
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/js/jquery.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/js/jquery.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/js/sha1.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/js/sha1.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/js/uikit.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/js/uikit.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/js/sticky.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/js/sticky.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/js/vue.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/js/vue.min.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:05" - root - INFO - Request: GET /static/js/awesome.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - check user: GET /static/js/awesome.js
+"Tue, 08 May 2018 18:31:05" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:06" - root - INFO - Request: GET /static/fonts/fontawesome-webfont.eot
+"Tue, 08 May 2018 18:31:06" - root - INFO - check user: GET /static/fonts/fontawesome-webfont.eot
+"Tue, 08 May 2018 18:31:06" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:06" - root - INFO - Request: GET /favicon.ico
+"Tue, 08 May 2018 18:31:06" - root - INFO - check user: GET /favicon.ico
+"Tue, 08 May 2018 18:31:06" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:38" - root - INFO - Request: GET /signin
+"Tue, 08 May 2018 18:31:38" - root - INFO - check user: GET /signin
+"Tue, 08 May 2018 18:31:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:38" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:31:49" - root - INFO - Request: POST /api/authenticate
+"Tue, 08 May 2018 18:31:49" - root - INFO - check user: POST /api/authenticate
+"Tue, 08 May 2018 18:31:49" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:49" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Tue, 08 May 2018 18:31:49" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Tue, 08 May 2018 18:31:49" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:31:49" - root - INFO - Request: GET /
+"Tue, 08 May 2018 18:31:49" - root - INFO - check user: GET /
+"Tue, 08 May 2018 18:31:49" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:31:49" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:31:49" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:31:49" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:31:49" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:31:49" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:31:49" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:32:12" - root - INFO - Request: GET /manage/blogs/create
+"Tue, 08 May 2018 18:32:12" - root - INFO - check user: GET /manage/blogs/create
+"Tue, 08 May 2018 18:32:12" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:32:12" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:32:12" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:32:12" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:32:12" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:32:45" - root - INFO - Request: POST /api/blogs
+"Tue, 08 May 2018 18:32:45" - root - INFO - check user: POST /api/blogs
+"Tue, 08 May 2018 18:32:45" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:32:45" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:32:45" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:32:45" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:32:45" - root - INFO - call with args: {'name': 'this is my first blog', 'summary': 'today', 'content': '我爱你中国', 'request': <Request POST /api/blogs >}
+"Tue, 08 May 2018 18:32:45" - root - DEBUG - using default value for created_at: 1525775565.970065
+"Tue, 08 May 2018 18:32:45" - root - DEBUG - using default value for id: 0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:32:45" - root - INFO - SQL: insert into `blogs` (`user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?, ?)
+"Tue, 08 May 2018 18:32:46" - root - INFO - Request: GET /manage/blogs
+"Tue, 08 May 2018 18:32:46" - root - INFO - check user: GET /manage/blogs
+"Tue, 08 May 2018 18:32:46" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:32:46" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:32:46" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:32:46" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:32:46" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:32:46" - root - INFO - Request: GET /api/blogs
+"Tue, 08 May 2018 18:32:46" - root - INFO - check user: GET /api/blogs
+"Tue, 08 May 2018 18:32:46" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:32:46" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:32:46" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:32:46" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:32:46" - root - INFO - call with args: {'page': '1'}
+"Tue, 08 May 2018 18:32:46" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:32:46" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:32:46" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Tue, 08 May 2018 18:32:46" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:15" - root - INFO - Request: GET /manage/blogs
+"Tue, 08 May 2018 18:33:15" - root - INFO - check user: GET /manage/blogs
+"Tue, 08 May 2018 18:33:15" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:15" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:15" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:15" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:15" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:33:15" - root - INFO - Request: GET /api/blogs
+"Tue, 08 May 2018 18:33:15" - root - INFO - check user: GET /api/blogs
+"Tue, 08 May 2018 18:33:15" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:15" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:15" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:15" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:15" - root - INFO - call with args: {'page': '1'}
+"Tue, 08 May 2018 18:33:15" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:33:15" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:15" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Tue, 08 May 2018 18:33:15" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:18" - root - INFO - Request: GET /user/001525693002572439e4ee967684807a4e3c55ef40fd005000
+"Tue, 08 May 2018 18:33:18" - root - INFO - check user: GET /user/001525693002572439e4ee967684807a4e3c55ef40fd005000
+"Tue, 08 May 2018 18:33:18" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:18" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:18" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:18" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:21" - root - INFO - Request: GET /manage/blogs/edit
+"Tue, 08 May 2018 18:33:21" - root - INFO - check user: GET /manage/blogs/edit
+"Tue, 08 May 2018 18:33:21" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:21" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:21" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:21" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:21" - root - INFO - call with args: {'id': '0015257755659729a80b5cd6bed4c29a52001e858cb31cd000'}
+"Tue, 08 May 2018 18:33:21" - root - INFO - Request: GET /api/blogs/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:33:21" - root - INFO - check user: GET /api/blogs/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:33:21" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:21" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:21" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:21" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:21" - root - INFO - call with args: {'id': '0015257755659729a80b5cd6bed4c29a52001e858cb31cd000'}
+"Tue, 08 May 2018 18:33:21" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` where `id`=?
+"Tue, 08 May 2018 18:33:21" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:26" - root - INFO - Request: GET /manage/comments
+"Tue, 08 May 2018 18:33:26" - root - INFO - check user: GET /manage/comments
+"Tue, 08 May 2018 18:33:26" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:26" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:26" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:26" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:26" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:33:26" - root - INFO - Request: GET /api/comments
+"Tue, 08 May 2018 18:33:26" - root - INFO - check user: GET /api/comments
+"Tue, 08 May 2018 18:33:26" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:26" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:26" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:27" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:27" - root - INFO - call with args: {'page': '1'}
+"Tue, 08 May 2018 18:33:27" - root - INFO - SQL: select count(id) _num_ from `comments`
+"Tue, 08 May 2018 18:33:27" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:31" - root - INFO - Request: GET /signout
+"Tue, 08 May 2018 18:33:31" - root - INFO - check user: GET /signout
+"Tue, 08 May 2018 18:33:31" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:31" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:31" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:31" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:31" - root - INFO - call with args: {'request': <Request GET /signout >}
+"Tue, 08 May 2018 18:33:31" - root - INFO - user signed out.
+"Tue, 08 May 2018 18:33:31" - root - INFO - Request: GET /manage/comments
+"Tue, 08 May 2018 18:33:31" - root - INFO - check user: GET /manage/comments
+"Tue, 08 May 2018 18:33:31" - root - INFO - Request: GET /signin
+"Tue, 08 May 2018 18:33:31" - root - INFO - check user: GET /signin
+"Tue, 08 May 2018 18:33:31" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:31" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:33:33" - root - INFO - Request: POST /api/authenticate
+"Tue, 08 May 2018 18:33:33" - root - INFO - check user: POST /api/authenticate
+"Tue, 08 May 2018 18:33:33" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:33" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Tue, 08 May 2018 18:33:33" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Tue, 08 May 2018 18:33:33" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:33" - root - INFO - Request: GET /
+"Tue, 08 May 2018 18:33:33" - root - INFO - check user: GET /
+"Tue, 08 May 2018 18:33:33" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:33" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:33" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:33" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:33" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:33:33" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:33:34" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:34" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Tue, 08 May 2018 18:33:34" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:35" - root - INFO - Request: GET /signout
+"Tue, 08 May 2018 18:33:35" - root - INFO - check user: GET /signout
+"Tue, 08 May 2018 18:33:35" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:33:35" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:35" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 18:33:35" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:35" - root - INFO - call with args: {'request': <Request GET /signout >}
+"Tue, 08 May 2018 18:33:35" - root - INFO - user signed out.
+"Tue, 08 May 2018 18:33:35" - root - INFO - Request: GET /
+"Tue, 08 May 2018 18:33:35" - root - INFO - check user: GET /
+"Tue, 08 May 2018 18:33:35" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:35" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:33:35" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:33:35" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:35" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Tue, 08 May 2018 18:33:35" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:33:37" - root - INFO - Request: GET /register
+"Tue, 08 May 2018 18:33:37" - root - INFO - check user: GET /register
+"Tue, 08 May 2018 18:33:37" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:33:37" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:34:03" - root - INFO - Request: POST /api/users
+"Tue, 08 May 2018 18:34:03" - root - INFO - check user: POST /api/users
+"Tue, 08 May 2018 18:34:03" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:34:03" - root - INFO - call with args: {'email': 'aaa@aaa.com', 'name': 'aaa', 'passwd': '512d9217f4812bb1a9bbb98eca99bac2579cc37a'}
+"Tue, 08 May 2018 18:34:03" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Tue, 08 May 2018 18:34:03" - root - INFO - rows returned: 0
+"Tue, 08 May 2018 18:34:03" - root - DEBUG - using default value for admin: False
+"Tue, 08 May 2018 18:34:03" - root - DEBUG - using default value for created_at: 1525775643.4844987
+"Tue, 08 May 2018 18:34:03" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Tue, 08 May 2018 18:34:03" - root - INFO - Request: GET /
+"Tue, 08 May 2018 18:34:03" - root - INFO - check user: GET /
+"Tue, 08 May 2018 18:34:03" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:34:03" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:03" - root - INFO - set current user: aaa@aaa.com
+"Tue, 08 May 2018 18:34:03" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:34:03" - root - INFO - call with args: {}
+"Tue, 08 May 2018 18:34:03" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 18:34:03" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:03" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Tue, 08 May 2018 18:34:03" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:11" - root - INFO - Request: GET /blog/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:34:11" - root - INFO - check user: GET /blog/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:34:11" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:34:11" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:11" - root - INFO - set current user: aaa@aaa.com
+"Tue, 08 May 2018 18:34:11" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:34:11" - root - INFO - call with args: {'id': '0015257755659729a80b5cd6bed4c29a52001e858cb31cd000'}
+"Tue, 08 May 2018 18:34:11" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` where `id`=?
+"Tue, 08 May 2018 18:34:11" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:11" - root - INFO - SQL: select `id`, `blog_id`, `user_id`, `user_name`, `user_image`, `content`, `created_at` from `comments` where blog_id=? order by created_at desc
+"Tue, 08 May 2018 18:34:11" - root - INFO - rows returned: 0
+"Tue, 08 May 2018 18:34:25" - root - INFO - Request: POST /api/blogs/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000/comments
+"Tue, 08 May 2018 18:34:25" - root - INFO - check user: POST /api/blogs/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000/comments
+"Tue, 08 May 2018 18:34:25" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:34:25" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:25" - root - INFO - set current user: aaa@aaa.com
+"Tue, 08 May 2018 18:34:25" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:34:25" - root - INFO - call with args: {'content': '可以啊，兄得', 'id': '0015257755659729a80b5cd6bed4c29a52001e858cb31cd000', 'request': <Request POST /api/blogs/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000/comments >}
+"Tue, 08 May 2018 18:34:25" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` where `id`=?
+"Tue, 08 May 2018 18:34:25" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:25" - root - DEBUG - using default value for created_at: 1525775665.988786
+"Tue, 08 May 2018 18:34:25" - root - DEBUG - using default value for id: 001525775665996db44fa2e535d456c90a77cde2aa5c61c000
+"Tue, 08 May 2018 18:34:25" - root - INFO - SQL: insert into `comments` (`blog_id`, `user_id`, `user_name`, `user_image`, `content`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Tue, 08 May 2018 18:34:26" - root - INFO - Request: GET /blog/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:34:26" - root - INFO - check user: GET /blog/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Tue, 08 May 2018 18:34:26" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 18:34:26" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:26" - root - INFO - set current user: aaa@aaa.com
+"Tue, 08 May 2018 18:34:26" - root - INFO - Response handler...
+"Tue, 08 May 2018 18:34:26" - root - INFO - call with args: {'id': '0015257755659729a80b5cd6bed4c29a52001e858cb31cd000'}
+"Tue, 08 May 2018 18:34:26" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` where `id`=?
+"Tue, 08 May 2018 18:34:26" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 18:34:26" - root - INFO - SQL: select `id`, `blog_id`, `user_id`, `user_name`, `user_image`, `content`, `created_at` from `comments` where blog_id=? order by created_at desc
+"Tue, 08 May 2018 18:34:26" - root - INFO - rows returned: 1
