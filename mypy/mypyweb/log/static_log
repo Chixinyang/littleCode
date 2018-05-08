@@ -1,3 +1,908 @@
 "Thu, 03 May 2018 11:15:39" - root - INFO - server started at http://127.0.0.1:9000...
 "Thu, 03 May 2018 11:18:22" - root - INFO - server started at http://127.0.0.1:9000...
 "Thu, 03 May 2018 11:20:45" - root - INFO - server started at http://127.0.0.1:9000...
+"Mon, 07 May 2018 19:33:28" - root - INFO - found model: User (table: users)
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:33:28" - root - INFO - found model: Blog (table: blogs)
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:33:28" - root - INFO - found model: Comment (table: comments)
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:33:28" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:33:28" - root - INFO - create database connection pool...
+"Mon, 07 May 2018 19:33:28" - root - INFO - init jinja2...
+"Mon, 07 May 2018 19:33:28" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /api/comments => api_comments(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /api/users => api_get_users(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET / => index(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /manage/ => manage()
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /manage/users => manage_users(page)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /register => register()
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /signin => signin()
+"Mon, 07 May 2018 19:33:28" - root - INFO - add route GET /signout => signout(request)
+"Mon, 07 May 2018 19:33:28" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Mon, 07 May 2018 19:33:28" - root - INFO - server started at http://127.0.0.1:9000...
+"Mon, 07 May 2018 19:33:40" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:33:40" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:33:40" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:40" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:33:40" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:33:40" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/css/uikit.min.css
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/css/uikit.min.css
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/js/sticky.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/js/sticky.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/js/uikit.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/js/uikit.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/css/uikit.gradient.min.css
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/css/uikit.gradient.min.css
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/css/awesome.css
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/css/awesome.css
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/js/jquery.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/js/jquery.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/js/sha1.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/js/sha1.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/js/vue.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/js/vue.min.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/js/awesome.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/js/awesome.js
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /static/fonts/fontawesome-webfont.woff
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /static/fonts/fontawesome-webfont.woff
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:33:41" - root - INFO - Request: GET /favicon.ico
+"Mon, 07 May 2018 19:33:41" - root - INFO - check user: GET /favicon.ico
+"Mon, 07 May 2018 19:33:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:34:04" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:34:04" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:34:04" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:34:04" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:34:14" - root - INFO - Request: GET /register
+"Mon, 07 May 2018 19:34:14" - root - INFO - check user: GET /register
+"Mon, 07 May 2018 19:34:14" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:34:14" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:34:22" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:34:22" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:34:22" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:34:22" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:34:23" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:34:23" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:36:07" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:36:07" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:36:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:36:07" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:36:07" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:36:07" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:36:07" - root - INFO - Request: GET /favicon.ico
+"Mon, 07 May 2018 19:36:07" - root - INFO - check user: GET /favicon.ico
+"Mon, 07 May 2018 19:36:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:36:10" - root - INFO - Request: GET /register
+"Mon, 07 May 2018 19:36:10" - root - INFO - check user: GET /register
+"Mon, 07 May 2018 19:36:10" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:36:10" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:36:42" - root - INFO - Request: POST /api/users
+"Mon, 07 May 2018 19:36:42" - root - INFO - check user: POST /api/users
+"Mon, 07 May 2018 19:36:42" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:36:42" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'name': 'ccc', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:36:42" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:36:42" - root - INFO - rows returned: 0
+"Mon, 07 May 2018 19:36:42" - root - DEBUG - using default value for admin: False
+"Mon, 07 May 2018 19:36:42" - root - DEBUG - using default value for created_at: 1525693002.5740857
+"Mon, 07 May 2018 19:36:42" - root - INFO - SQL: insert into `users` (`email`, `passwd`, `admin`, `name`, `image`, `created_at`, `id`) values (?, ?, ?, ?, ?, ?, ?)
+"Mon, 07 May 2018 19:36:42" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:36:42" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:36:42" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:36:42" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:36:42" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:36:42" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:36:42" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:36:42" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:36:42" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:36:59" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:36:59" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:36:59" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:36:59" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:36:59" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:36:59" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:36:59" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:36:59" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:36:59" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:38:56" - root - INFO - Request: GET /manage/
+"Mon, 07 May 2018 19:38:56" - root - INFO - check user: GET /manage/
+"Mon, 07 May 2018 19:38:56" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:38:56" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:38:56" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:38:56" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:38:56" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:38:56" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:38:56" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:38:56" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:38:56" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:38:56" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:38:58" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:38:58" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:38:58" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:38:58" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:38:58" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:38:58" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:38:58" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:38:58" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:38:58" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:38:58" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:38:58" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:38:58" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:38:58" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:38:58" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:38:58" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:38:58" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:38:58" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:38:58" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:39:02" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:39:02" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:39:02" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:39:02" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:39:02" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:39:02" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:39:02" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:39:02" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:39:02" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:32" - root - INFO - Request: GET /signout
+"Mon, 07 May 2018 19:40:32" - root - INFO - check user: GET /signout
+"Mon, 07 May 2018 19:40:32" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:32" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:32" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:32" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:32" - root - INFO - call with args: {'request': <Request GET /signout >}
+"Mon, 07 May 2018 19:40:32" - root - INFO - user signed out.
+"Mon, 07 May 2018 19:40:32" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:40:32" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:40:32" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:32" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:32" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:40:32" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:34" - root - INFO - Request: GET /register
+"Mon, 07 May 2018 19:40:34" - root - INFO - check user: GET /register
+"Mon, 07 May 2018 19:40:34" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:34" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:36" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:40:36" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:40:36" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:36" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:37" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:40:37" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:40:37" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:37" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:40:37" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:40:37" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:37" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:40:37" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:40:37" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:37" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:37" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:37" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:37" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:37" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:40:37" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:39" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:40:39" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:40:39" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:39" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:39" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:39" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:39" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:39" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:40:39" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:47" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:40:47" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:40:47" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:47" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:47" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:47" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:47" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:50" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:40:50" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:40:50" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:50" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:50" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:50" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:50" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:40:50" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:40:50" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:50" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:40:50" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:40:50" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:50" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:50" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:50" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:50" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:40:50" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:40:50" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:59" - root - INFO - Request: GET /manage/create
+"Mon, 07 May 2018 19:40:59" - root - INFO - check user: GET /manage/create
+"Mon, 07 May 2018 19:40:59" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:59" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:59" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:59" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:40:59" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:40:59" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:40:59" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:40:59" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:40:59" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:40:59" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:41:05" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:41:05" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:41:05" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:41:05" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:41:05" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:41:05" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:41:05" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:41:05" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:41:05" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:41:05" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:41:05" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:41:05" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:41:05" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:41:05" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:41:05" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:41:05" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:41:05" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:41:05" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:44:45" - root - INFO - found model: User (table: users)
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:44:45" - root - INFO - found model: Blog (table: blogs)
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:44:45" - root - INFO - found model: Comment (table: comments)
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:44:45" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO - found model: User (table: users)
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO - found model: Blog (table: blogs)
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO - found model: Comment (table: comments)
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:44:54" - root - INFO - create database connection pool...
+"Mon, 07 May 2018 19:44:54" - root - INFO - init jinja2...
+"Mon, 07 May 2018 19:44:54" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /api/comments => api_comments(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /api/users => api_get_users(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET / => index(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /manage/ => manage()
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /manage/users => manage_users(page)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /register => register()
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /signin => signin()
+"Mon, 07 May 2018 19:44:54" - root - INFO - add route GET /signout => signout(request)
+"Mon, 07 May 2018 19:44:54" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Mon, 07 May 2018 19:44:54" - root - INFO - server started at http://127.0.0.1:9000...
+"Mon, 07 May 2018 19:44:57" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:44:57" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:44:57" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:44:57" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:44:57" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:44:57" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:44:57" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:44:57" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:44:57" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:45:06" - root - INFO - Request: GET /manage/create
+"Mon, 07 May 2018 19:45:06" - root - INFO - check user: GET /manage/create
+"Mon, 07 May 2018 19:45:06" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:45:06" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:45:06" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:45:06" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:45:15" - root - INFO - Request: GET /yser
+"Mon, 07 May 2018 19:45:15" - root - INFO - check user: GET /yser
+"Mon, 07 May 2018 19:45:15" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:45:15" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:45:15" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:45:15" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:45:20" - root - INFO - Request: GET /user
+"Mon, 07 May 2018 19:45:20" - root - INFO - check user: GET /user
+"Mon, 07 May 2018 19:45:20" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:45:20" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:45:20" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:45:20" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:45:58" - root - INFO - Request: GET /user
+"Mon, 07 May 2018 19:45:58" - root - INFO - check user: GET /user
+"Mon, 07 May 2018 19:45:58" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:45:58" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:45:58" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:45:58" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:46:02" - root - INFO - Request: GET /user
+"Mon, 07 May 2018 19:46:02" - root - INFO - check user: GET /user
+"Mon, 07 May 2018 19:46:02" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:02" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:02" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:02" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:46:08" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:46:08" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:46:08" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:08" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:08" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:08" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:46:08" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:46:08" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:46:08" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:17" - root - INFO - Request: GET /manage/create
+"Mon, 07 May 2018 19:46:17" - root - INFO - check user: GET /manage/create
+"Mon, 07 May 2018 19:46:17" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:17" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:17" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:17" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:46:17" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:46:17" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:17" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:17" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:17" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:46:17" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:46:19" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:46:19" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:46:19" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:19" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:19" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:19" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:46:19" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:46:19" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:46:19" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:19" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:46:19" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:46:19" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:19" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:19" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:19" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:46:19" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:46:19" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:46:19" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:26" - root - INFO - Request: GET /user
+"Mon, 07 May 2018 19:46:26" - root - INFO - check user: GET /user
+"Mon, 07 May 2018 19:46:26" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:46:26" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:46:26" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:46:26" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:47:02" - root - INFO - Request: GET /users
+"Mon, 07 May 2018 19:47:02" - root - INFO - check user: GET /users
+"Mon, 07 May 2018 19:47:02" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:47:02" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:47:02" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:47:02" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:47:04" - root - INFO - Request: GET /users
+"Mon, 07 May 2018 19:47:04" - root - INFO - check user: GET /users
+"Mon, 07 May 2018 19:47:04" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:47:04" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:47:04" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:47:04" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:47:06" - root - INFO - Request: GET /users
+"Mon, 07 May 2018 19:47:06" - root - INFO - check user: GET /users
+"Mon, 07 May 2018 19:47:06" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:47:06" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:47:06" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:47:06" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:47:07" - root - INFO - Request: GET /users
+"Mon, 07 May 2018 19:47:07" - root - INFO - check user: GET /users
+"Mon, 07 May 2018 19:47:07" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:47:07" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:47:07" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:47:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:47:46" - root - INFO - Request: GET /manage/users
+"Mon, 07 May 2018 19:47:46" - root - INFO - check user: GET /manage/users
+"Mon, 07 May 2018 19:47:46" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:47:46" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:47:46" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:47:46" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:47:46" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:47:46" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:47:46" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:47:46" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:47:46" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:47:46" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:48:12" - root - INFO - found model: User (table: users)
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:12" - root - INFO - found model: Blog (table: blogs)
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:12" - root - INFO - found model: Comment (table: comments)
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:48:12" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:12" - root - INFO - create database connection pool...
+"Mon, 07 May 2018 19:48:12" - root - INFO - init jinja2...
+"Mon, 07 May 2018 19:48:12" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /api/comments => api_comments(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /api/users => api_get_users(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET / => index(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /manage/ => manage()
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /manage/users => manage_users(page)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /register => register()
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /signin => signin()
+"Mon, 07 May 2018 19:48:12" - root - INFO - add route GET /signout => signout(request)
+"Mon, 07 May 2018 19:48:12" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Mon, 07 May 2018 19:48:23" - root - INFO - found model: User (table: users)
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:23" - root - INFO - found model: Blog (table: blogs)
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:23" - root - INFO - found model: Comment (table: comments)
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:48:23" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:23" - root - INFO - create database connection pool...
+"Mon, 07 May 2018 19:48:23" - root - INFO - init jinja2...
+"Mon, 07 May 2018 19:48:23" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /api/comments => api_comments(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /api/users => api_get_users(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET / => index(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /manage/ => manage()
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /manage/users => manage_users(page)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /register => register()
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /signin => signin()
+"Mon, 07 May 2018 19:48:23" - root - INFO - add route GET /signout => signout(request)
+"Mon, 07 May 2018 19:48:23" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Mon, 07 May 2018 19:48:41" - root - INFO - found model: User (table: users)
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:41" - root - INFO - found model: Blog (table: blogs)
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:41" - root - INFO - found model: Comment (table: comments)
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Mon, 07 May 2018 19:48:41" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Mon, 07 May 2018 19:48:41" - root - INFO - create database connection pool...
+"Mon, 07 May 2018 19:48:41" - root - INFO - init jinja2...
+"Mon, 07 May 2018 19:48:41" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /api/comments => api_comments(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /api/users => api_get_users(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET / => index(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /manage/ => manage()
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /manage/users => manage_users(page)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /register => register()
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /signin => signin()
+"Mon, 07 May 2018 19:48:41" - root - INFO - add route GET /signout => signout(request)
+"Mon, 07 May 2018 19:48:41" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Mon, 07 May 2018 19:48:41" - root - INFO - server started at http://127.0.0.1:9000...
+"Mon, 07 May 2018 19:48:47" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:48:47" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:48:47" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:48:47" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:48:47" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:48:47" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:48:47" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:48:47" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:48:47" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:48:47" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:48:47" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:48:47" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:48:48" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:48:48" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:48:48" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:48:48" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:48:48" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:48:48" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:49:13" - root - INFO - Request: GET /manage/create
+"Mon, 07 May 2018 19:49:13" - root - INFO - check user: GET /manage/create
+"Mon, 07 May 2018 19:49:13" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:49:13" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:49:13" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:49:13" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 19:49:13" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 19:49:13" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:49:13" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:49:13" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:49:13" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:49:13" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:49:16" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 19:49:16" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 19:49:16" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:49:16" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:49:16" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:49:16" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:49:16" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 19:49:16" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 19:49:16" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:49:16" - root - INFO - Request: GET /
+"Mon, 07 May 2018 19:49:16" - root - INFO - check user: GET /
+"Mon, 07 May 2018 19:49:16" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 19:49:16" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 19:49:16" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 19:49:16" - root - INFO - Response handler...
+"Mon, 07 May 2018 19:49:16" - root - INFO - call with args: {}
+"Mon, 07 May 2018 19:49:16" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 19:49:16" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - call with args: {}
+"Mon, 07 May 2018 20:16:07" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 20:16:07" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/css/uikit.min.css
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/css/uikit.min.css
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/css/awesome.css
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/css/awesome.css
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/css/uikit.gradient.min.css
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/css/uikit.gradient.min.css
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/js/jquery.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/js/jquery.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/js/sha1.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/js/sha1.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/js/uikit.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/js/uikit.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/js/sticky.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/js/sticky.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/js/vue.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/js/vue.min.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/js/awesome.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/js/awesome.js
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /static/fonts/fontawesome-webfont.woff
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /static/fonts/fontawesome-webfont.woff
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:07" - root - INFO - Request: GET /favicon.ico
+"Mon, 07 May 2018 20:16:07" - root - INFO - check user: GET /favicon.ico
+"Mon, 07 May 2018 20:16:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:34" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 20:16:34" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 20:16:34" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:34" - root - INFO - call with args: {}
+"Mon, 07 May 2018 20:16:41" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 20:16:41" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 20:16:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:41" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 20:16:41" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 20:16:41" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:16:41" - root - INFO - Request: GET /
+"Mon, 07 May 2018 20:16:41" - root - INFO - check user: GET /
+"Mon, 07 May 2018 20:16:41" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 20:16:41" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:16:41" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 20:16:41" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:16:41" - root - INFO - call with args: {}
+"Mon, 07 May 2018 20:16:41" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 20:16:41" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:17:35" - root - INFO - Request: GET /manger
+"Mon, 07 May 2018 20:17:35" - root - INFO - check user: GET /manger
+"Mon, 07 May 2018 20:17:35" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 20:17:35" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:17:35" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 20:17:35" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:18:05" - root - INFO - Request: GET /manage/blogs/edit
+"Mon, 07 May 2018 20:18:05" - root - INFO - check user: GET /manage/blogs/edit
+"Mon, 07 May 2018 20:18:05" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 20:18:05" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:18:05" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 20:18:05" - root - INFO - Request: GET /signin
+"Mon, 07 May 2018 20:18:05" - root - INFO - check user: GET /signin
+"Mon, 07 May 2018 20:18:05" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 20:18:05" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:18:05" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 20:18:05" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:18:05" - root - INFO - call with args: {}
+"Mon, 07 May 2018 20:18:07" - root - INFO - Request: POST /api/authenticate
+"Mon, 07 May 2018 20:18:07" - root - INFO - check user: POST /api/authenticate
+"Mon, 07 May 2018 20:18:07" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 20:18:07" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:18:07" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 20:18:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:18:07" - root - INFO - call with args: {'email': 'ccc@ccc.com', 'passwd': '3658d124baf0133a4dc3b947d2d5b833d5d8f870'}
+"Mon, 07 May 2018 20:18:07" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where email=?
+"Mon, 07 May 2018 20:18:07" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:18:07" - root - INFO - Request: GET /
+"Mon, 07 May 2018 20:18:07" - root - INFO - check user: GET /
+"Mon, 07 May 2018 20:18:07" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Mon, 07 May 2018 20:18:07" - root - INFO - rows returned: 1
+"Mon, 07 May 2018 20:18:07" - root - INFO - set current user: ccc@ccc.com
+"Mon, 07 May 2018 20:18:07" - root - INFO - Response handler...
+"Mon, 07 May 2018 20:18:07" - root - INFO - call with args: {}
+"Mon, 07 May 2018 20:18:07" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Mon, 07 May 2018 20:18:07" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:22" - root - INFO - found model: User (table: users)
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Tue, 08 May 2018 16:22:22" - root - INFO - found model: Blog (table: blogs)
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Tue, 08 May 2018 16:22:22" - root - INFO - found model: Comment (table: comments)
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Tue, 08 May 2018 16:22:22" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Tue, 08 May 2018 16:22:22" - root - INFO - create database connection pool...
+"Tue, 08 May 2018 16:22:22" - root - INFO - init jinja2...
+"Tue, 08 May 2018 16:22:22" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Tue, 08 May 2018 16:22:22" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Tue, 08 May 2018 16:22:22" - root - INFO - add route GET /api/comments => api_comments(page)
+"Tue, 08 May 2018 16:22:22" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Tue, 08 May 2018 16:22:22" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Tue, 08 May 2018 16:22:22" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Tue, 08 May 2018 16:22:22" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /api/users => api_get_users(page)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET / => index(page)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /manage/ => manage()
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /manage/users => manage_users(page)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /register => register()
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /signin => signin()
+"Tue, 08 May 2018 16:22:23" - root - INFO - add route GET /signout => signout(request)
+"Tue, 08 May 2018 16:22:23" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Tue, 08 May 2018 16:22:23" - root - INFO - server started at http://127.0.0.1:9000...
+"Tue, 08 May 2018 16:22:37" - root - INFO - Request: GET /
+"Tue, 08 May 2018 16:22:37" - root - INFO - check user: GET /
+"Tue, 08 May 2018 16:22:37" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:37" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:37" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:37" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:37" - root - INFO - call with args: {}
+"Tue, 08 May 2018 16:22:37" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Tue, 08 May 2018 16:22:37" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/css/uikit.min.css
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/css/uikit.min.css
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/css/uikit.gradient.min.css
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/css/uikit.gradient.min.css
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/css/awesome.css
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/css/awesome.css
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/js/jquery.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/js/jquery.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/js/sticky.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/js/sticky.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/js/sha1.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/js/sha1.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/js/uikit.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/js/uikit.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/js/vue.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/js/vue.min.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/js/awesome.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/js/awesome.js
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /static/fonts/fontawesome-webfont.woff
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /static/fonts/fontawesome-webfont.woff
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
+"Tue, 08 May 2018 16:22:38" - root - INFO - Request: GET /favicon.ico
+"Tue, 08 May 2018 16:22:38" - root - INFO - check user: GET /favicon.ico
+"Tue, 08 May 2018 16:22:38" - root - INFO - SQL: select `id`, `email`, `passwd`, `admin`, `name`, `image`, `created_at` from `users` where `id`=?
+"Tue, 08 May 2018 16:22:38" - root - INFO - rows returned: 1
+"Tue, 08 May 2018 16:22:38" - root - INFO - set current user: ccc@ccc.com
+"Tue, 08 May 2018 16:22:38" - root - INFO - Response handler...
