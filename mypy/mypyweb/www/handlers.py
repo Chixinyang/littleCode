@@ -3,8 +3,9 @@
 
 __author__ = 'Michael Liao'
 
-' url handlers '
-
+"""
+     用户自定义的根据method和url实现的处理函数 
+"""
 import re, time, json, logging, hashlib, base64, asyncio
 
 import markdown2

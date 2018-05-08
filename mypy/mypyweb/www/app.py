@@ -51,7 +51,7 @@ def init_jinja2(app, **kw):  #配置jinja2网页模板，**kw 把后续多个输
 
 
 @asyncio.coroutine
-def logger_factory(app, handler):
+def logger_factory(app, handler):   #日志的中间操作
     @asyncio.coroutine
     def logger(request):
         logging.info('Request: %s %s' % (request.method, request.path))
@@ -62,7 +62,7 @@ def logger_factory(app, handler):
 
 
 @asyncio.coroutine
-def auth_factory(app, handler):
+def auth_factory(app, handler): #验证的中间操作
     @asyncio.coroutine
     def auth(request):
         logging.info('check user: %s %s' % (request.method, request.path))
@@ -165,6 +165,7 @@ def init(loop):
     app = web.Application( #通过webapp构架函数构建web App
         loop=loop,  #loop
         middlewares=[logger_factory, auth_factory, response_factory] ) #传入中间操作函数
+        #middleware的用处就在于把通用的功能从每个URL处理函数中拿出来，集中放到一个地方
     init_jinja2(app, filters=dict(datetime=datetime_filter)) #初始化jinja2模板，传入app，以及过滤器
     add_routes(app, 'handlers') #注册app的路由处理
     add_static(app) #添加app的静态文件路径

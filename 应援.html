@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+        <title>GNZ48-农燕萍拉票海报网络版全球应援，微信点亮地图坐标活动</title>
+        <link rel="stylesheet" type="text/css" href="/statics/member/poster/css/common.css">
+        <link rel="stylesheet" type="text/css" href="/statics/member/poster/css/index.css" />
+        <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+		<link rel="stylesheet" type="text/css" href="/statics/member/poster/jqweui/demos/css/demos.css"/>
+        <link rel="stylesheet" type="text/css" href="/statics/member/poster/css/animate.min.css" />
+        <script src="/statics/member/poster/js/jquery-1.11.3.min.js"></script>
+        <style type="text/css">
+            .yy-ry{
+              position:relative;
+            }
+            #fm{
+              position:absolute;
+              right:1rem;
+              top:1.1rem;
+            }
+            .yy-ry #q {
+                width: 6rem;
+                height: 0.9rem;
+                padding: 0 0.5rem 0 0.2rem;
+                background: #eeeeee;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .yy-ry #submit {
+                width: 1rem;
+                height: 1rem;
+                border: 0 none;
+                background: url(/statics/member/poster/img/listss.png) no-repeat center 0;
+                margin-left: -1rem;
+                margin-top: 0.02rem;
+                cursor: pointer;
+                background-size: 100%;
+                border-radius:0 4px 4px 0;
+            }
+            .yy-ry input {
+                float: left;
+                color: #666;
+                outline: none;
+            }
+            .header{
+                position:relative;
+            }
+            .bc{
+                width: 8rem;
+                position:absolute;
+                left:50%;
+                margin-left: -3rem;
+                top:5%;
+                display:none;
+            }
+            .animate-ts{
+                display:block;
+                animation: bounce .8s linear  infinite;
+            }
+            #nickname{
+                background: none;
+                font-size: 0.48rem;
+                color: #000;
+                padding:0 0.5rem 0.1rem;
+                width: 4rem;
+                border-bottom:1px solid #666;
+            }
+            .namebox{
+                display:inline-block;
+            }
+        </style>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?11658825fa070201a41b6307fbd3d138";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <script type="text/javascript">
+    
+            // 对浏览器的UserAgent进行正则匹配，不含有微信独有标识的则为其他浏览器  
+            var useragent = navigator.userAgent;  
+            if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {  
+                var opened = window.open('about:blank', '_self');  
+                opened.opener = null; 
+                // 这里警告框会阻塞当前页面继续加载  
+                alert('已禁止本次访问：请在微信客户端中打开！');  
+                // 以下代码是用javascript强行关闭当前页面  
+               // opened.close();  
+            }
+
+        </script>
+    </head>
+    
+
+    <body>
+            <div class="main">
+                <div class="header" id="capture">
+                    <div class="banner">
+                        <img id="hiabao" src="/statics/member/poster/haibao/nyp.jpg" onerror="this.src='/statics/member/poster/haibao/nyp.jpg'"  alt="" />
+                    </div>
+                    <div class="bc">
+                        <img src="/statics/member/poster/img/bc.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="yyz">
+                    <div class="yyz-g1"></div>
+                    <div class="yyz-g2">
+                        <p>当前应援值</p>
+                        <h1 id="score">000000</h1>
+                        <p>
+                            <span class="namebox">
+                                   昵称：
+                                <input type="text" id="nickname" placeholder="请输入昵称" maxlength="8" />
+                            </span>
+                        </p>
+                        <p>当前地址为：<spam id="addressHtml"></spam></p> 
+                        <!-- 倒计时 -->
+                        <p class="djs">应援结束时间：<span id="clock"></span>
+                        <div class="yy-btn" id="generateImage">应援</div>
+                    </div> 
+                    <div class="yyz-g3">
+                        <ol class="clearfix">
+                            <li>
+                                <a href="https://vote.48.cn/wx/members-detail.html?sid=30043&gname=GNZ">
+                                    <img src="/statics/member/poster/img/1.png"  alt="" /><br />
+                                    <span>投票通道</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/nongyanping/">
+                                    <img src="/statics/member/poster/img/2.png"  alt="" /><br />
+                                    <span>成员主页</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://weibo.com/p/1005056034212582/">
+                                    <img src="/statics/member/poster/img/3.png"  alt="" /><br />
+                                    <span>微博</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="yy-ry">
+                   
+                    <dl id="list">
+                        <dt>
+                            <img src="/statics/member/poster/img/pick.png" alt="" />
+                        </dt>
+                        <!--<dd>
+                        	<a href="http://apis.map.qq.com/uri/v1/geocoder?coord=23.043112,113.29179&referer=myapp">
+	                            <i>1</i>
+	                            <p class="p1"><span class="sp1">中泰十三</span> <span class="sp2">05.10 15:30</span></p>
+	                            <p class="p2">广东省韶关市浈江区曲江大道应援</p>
+	                        </a>
+                        </dd>
+                        <dd>
+                        	<a href="http://apis.map.qq.com/uri/v1/geocoder?coord=23.043112,113.29179&referer=myapp">
+                        		<i>2</i>
+                            	<p class="p1"><span class="sp1">汤假假</span> <span class="sp2">05.10 15:30</span></p>
+                            	<p class="p2">广东省韶关市大连</p>
+                        	</a>
+                        </dd>-->
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="weui-loadmore load">
+			  	<i class="weui-loading"></i>
+			  	<span class="weui-loadmore__tips" style="color: #000000;">正在加载</span>
+			</div>
+			<div class="weui-loadmore weui-loadmore_line kong" style="display: none;">
+			  	<span class="weui-loadmore__tips">数据已全部加载完</span>
+			</div>
+            
+            
+            
+            
+    <input type="hidden" name="posterImage" id="posterImage" value="nyp.jpg" />
+	<input type="hidden" name="posterName" id="posterName" value="农燕萍" />
+	<input type="hidden" name="posterID" id="posterID" value="30043" />
+	<input type="hidden" name="latitude" id="latitude" value="" />
+	<input type="hidden" name="longitude" id="longitude" value="" />
+	<input type="hidden" name="address" id="address" value="" />
+	<input type="hidden" name="username" id="username" value="" />
+    <input type="hidden" name="usertype" id="usertype" value="" />
+	<input type="hidden" name="GNZ48usid" id="GNZ48usid" value="" />
+	<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=6QJBZ-GLPWG-FT3QP-IBIOB-3E222-LTF2F"></script>
+    <script src="/statics/member/poster/js/share.js?hs=5855212" type="text/javascript" charset="utf-8"></script>
+    <script src="/statics/member/poster/js/jquery.countdown.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/leaguer/member.php?sid=30043" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var shareTitlestr="GNZ48-农燕萍拉票海报网络版全球应援，微信点亮地图坐标活动";//分享标题
+        var shareDesc="SNH48 GROUP 第五届偶像年度人气总决选-GNZ48成员拉票海报网络版扫描二维码人气应援";//分享介绍
+        var shareLink="http://www.gnz48.com/nongyanping/support.html";
+        var thumbLink="http://www.gnz48.com/images/share/zp_"+30043+".jpg";
+        wxshare();
+    </script>
+    
+    <script type="text/javascript">
+    	var loading = false;  //状态标记
+    	var str = '';
+    	var i = 0
+    	var page = 0;
+    	var posterID = $('#posterID').val();
+		$(document.body).infinite().on("infinite", function() {
+		  if(loading) return;
+		  loading = true;
+		  setTimeout(function() {
+		  	page++;
+		  	$.get('/PublicApi/index.php?m=api&c=ImagesApi&a=posterList&posterID='+posterID+'&page='+page,function(res){
+		  		eval("var obj = " + res);
+		  		if(obj.status == 200){
+		  			$.each(obj.desc, function(k,v) {
+			  			i++;
+                        str += '<dd><a href="#"><i>'+i+'</i><p class="p1"><span class="sp1">我是'+v.username+'</span> <span class="sp2">'+v.postertime+'</span></p><p class="p2">我在'+v.address+'为'+v.postername+'应援</p></a></dd>';
+                    });
+		  		}else{
+		  			$.alert(obj.desc);
+		  		}
+		  		if(obj.desc == ''){
+		  			//$.alert('数据已加载完成');
+		  			$('.load').hide();
+		  			$('.kong').show();
+		  			$(document.body).destroyInfinite()
+		  		}
+		  		
+		  	})
+		    $("#list").append(str);
+		    str = '';
+		    loading = false;
+		  }, 100);//模拟延迟
+		});
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		var posterID = $('#posterID').val();
+    		$.get('/PublicApi/index.php?m=api&c=ImagesApi&a=isDataKey&posterID='+posterID,function(res){
+    			eval("var obj = " + res);
+    			if(obj.status == 200){
+    				$('#score').text(obj.desc.score);
+    				if(obj.desc.nickname){
+                        $('#nickname').val(obj.desc.nickname);
+                    }else{
+                        $('#nickname').val('');
+                    }
+    				$('#username').val(obj.desc.username);
+    				$('#usertype').val(obj.desc.usertype);
+    				if(obj.desc.posterRow == 1){
+    					$('.yy-btn').addClass('current');
+    					$('#hiabao').attr('src',obj.desc.posterImg);
+                        $('#addressHtml').html(obj.desc.address);
+                        $('.bc').addClass('animate-ts');
+                        $("html,body").animate({scrollTop:0}, 500);
+    				}		
+    			}else{
+    				$.alert('应援信息出错');
+    			}
+    		});
+
+            $.get('/PublicApi/index.php?m=Api&c=PosterApi&a=create',function(us){
+                $('#GNZ48usid').val(us);
+            })
+    	})
+    </script>
+    </body>
+    <script type="text/javascript">
+    $(function(){
+        $('.yy-btn').click(function(event) {
+            /* Act on the event */
+            $(this).addClass('current');
+        });
+        // 倒计时
+        $('#clock').countdown("2018/07/11 04:00:00", function(event) {
+            $(this).html(event.strftime('%D 天 %H:%M:%S'));
+        });
+    })
+    </script>
+</html>

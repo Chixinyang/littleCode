@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+"""
+    info:web框架
+        作用：避免用户在函数内重复对url和method进行判断，以及对特定response的包装
+        目标：实现url，method到函数的映射，让用户尽可能少的编写代码，直接操作method,url,response;
+         
+"""
 __author__ = 'Michael Liao'
 
-import asyncio, os, inspect, logging, functools
 
+import asyncio, os, inspect, logging, functools
+#inpsect模块：获取对象信息
 from urllib import parse
 
 from aiohttp import web
 
 from apis import APIError
 
-def get(path):
+def get(path):#定义get装饰器
     '''
     Define decorator @get('/path')
     '''
@@ -20,11 +26,11 @@ def get(path):
         def wrapper(*args, **kw):
             return func(*args, **kw)
         wrapper.__method__ = 'GET'
-        wrapper.__route__ = path
+        wrapper.__route__ = path #???????
         return wrapper
     return decorator
 
-def post(path):
+def post(path):#定义post装饰器
     '''
     Define decorator @post('/path')
     '''
@@ -39,9 +45,10 @@ def post(path):
 
 def get_required_kw_args(fn):
     args = []
-    params = inspect.signature(fn).parameters
+    params = inspect.signature(fn).parameters   #提取fn函数的参数，以字典的形式返回（参数名：参数）
     for name, param in params.items():
         if param.kind == inspect.Parameter.KEYWORD_ONLY and param.default == inspect.Parameter.empty:
+            #如果参数类型是
             args.append(name)
     return tuple(args)
 
