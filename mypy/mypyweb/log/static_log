@@ -1234,3 +1234,270 @@
 "Tue, 08 May 2018 18:34:26" - root - INFO - rows returned: 1
 "Tue, 08 May 2018 18:34:26" - root - INFO - SQL: select `id`, `blog_id`, `user_id`, `user_name`, `user_image`, `content`, `created_at` from `comments` where blog_id=? order by created_at desc
 "Tue, 08 May 2018 18:34:26" - root - INFO - rows returned: 1
+"Wed, 30 May 2018 16:49:57" - root - INFO - found model: User (table: users)
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Wed, 30 May 2018 16:49:57" - root - INFO - found model: Blog (table: blogs)
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Wed, 30 May 2018 16:49:57" - root - INFO - found model: Comment (table: comments)
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Wed, 30 May 2018 16:49:57" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Wed, 30 May 2018 16:49:57" - root - INFO - create database connection pool...
+"Wed, 30 May 2018 16:50:28" - root - INFO - found model: User (table: users)
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Wed, 30 May 2018 16:50:28" - root - INFO - found model: Blog (table: blogs)
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Wed, 30 May 2018 16:50:28" - root - INFO - found model: Comment (table: comments)
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Wed, 30 May 2018 16:50:28" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Wed, 30 May 2018 16:50:28" - root - INFO - create database connection pool...
+"Wed, 30 May 2018 16:50:28" - root - INFO - init jinja2...
+"Wed, 30 May 2018 16:50:28" - root - INFO - set jinja2 template path: D:\mydocument\GIT\mygitlab\mypy\mypyweb\www\templates
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /api/comments => api_comments(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /api/users => api_get_users(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET / => index(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /manage/ => manage()
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /manage/users => manage_users(page)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /register => register()
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /signin => signin()
+"Wed, 30 May 2018 16:50:28" - root - INFO - add route GET /signout => signout(request)
+"Wed, 30 May 2018 16:50:28" - root - INFO - add static /static/ => D:\mydocument\GIT\mygitlab\mypy\mypyweb\www\static
+"Wed, 30 May 2018 16:50:28" - root - INFO - server started at http://127.0.0.1:9000...
+"Wed, 30 May 2018 16:50:32" - root - INFO - Request: GET /
+"Wed, 30 May 2018 16:50:32" - root - INFO - check user: GET /
+"Wed, 30 May 2018 16:50:32" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:32" - root - INFO - call with args: {}
+"Wed, 30 May 2018 16:50:32" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Wed, 30 May 2018 16:50:32" - root - INFO - rows returned: 1
+"Wed, 30 May 2018 16:50:32" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Wed, 30 May 2018 16:50:32" - root - INFO - rows returned: 1
+"Wed, 30 May 2018 16:50:32" - root - INFO - Request: GET /
+"Wed, 30 May 2018 16:50:32" - root - INFO - check user: GET /
+"Wed, 30 May 2018 16:50:32" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:32" - root - INFO - call with args: {}
+"Wed, 30 May 2018 16:50:32" - root - INFO - SQL: select count(id) _num_ from `blogs`
+"Wed, 30 May 2018 16:50:32" - root - INFO - rows returned: 1
+"Wed, 30 May 2018 16:50:32" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` order by created_at desc limit ?, ?
+"Wed, 30 May 2018 16:50:32" - root - INFO - rows returned: 1
+"Wed, 30 May 2018 16:50:32" - root - INFO - Request: GET /static/css/uikit.min.css
+"Wed, 30 May 2018 16:50:32" - root - INFO - check user: GET /static/css/uikit.min.css
+"Wed, 30 May 2018 16:50:32" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:32" - root - INFO - Request: GET /static/css/uikit.gradient.min.css
+"Wed, 30 May 2018 16:50:32" - root - INFO - check user: GET /static/css/uikit.gradient.min.css
+"Wed, 30 May 2018 16:50:32" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:32" - root - INFO - Request: GET /static/css/uikit.min.css
+"Wed, 30 May 2018 16:50:32" - root - INFO - check user: GET /static/css/uikit.min.css
+"Wed, 30 May 2018 16:50:32" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/css/awesome.css
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/css/awesome.css
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/jquery.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/jquery.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/uikit.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/uikit.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/sticky.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/sticky.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/vue.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/vue.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/awesome.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/awesome.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/css/uikit.gradient.min.css
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/css/uikit.gradient.min.css
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/css/awesome.css
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/css/awesome.css
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/sha1.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/sha1.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/vue.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/vue.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/jquery.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/jquery.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/sha1.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/sha1.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/sticky.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/sticky.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/uikit.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/uikit.min.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/js/awesome.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/js/awesome.js
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /static/fonts/fontawesome-webfont.eot
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /static/fonts/fontawesome-webfont.eot
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /favicon.ico
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /favicon.ico
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:33" - root - INFO - Request: GET /favicon.ico
+"Wed, 30 May 2018 16:50:33" - root - INFO - check user: GET /favicon.ico
+"Wed, 30 May 2018 16:50:33" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:41" - root - INFO - Request: GET /blog/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Wed, 30 May 2018 16:50:41" - root - INFO - check user: GET /blog/0015257755659729a80b5cd6bed4c29a52001e858cb31cd000
+"Wed, 30 May 2018 16:50:41" - root - INFO - Response handler...
+"Wed, 30 May 2018 16:50:41" - root - INFO - call with args: {'id': '0015257755659729a80b5cd6bed4c29a52001e858cb31cd000'}
+"Wed, 30 May 2018 16:50:41" - root - INFO - SQL: select `id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at` from `blogs` where `id`=?
+"Wed, 30 May 2018 16:50:41" - root - INFO - rows returned: 1
+"Wed, 30 May 2018 16:50:41" - root - INFO - SQL: select `id`, `blog_id`, `user_id`, `user_name`, `user_image`, `content`, `created_at` from `comments` where blog_id=? order by created_at desc
+"Wed, 30 May 2018 16:50:41" - root - INFO - rows returned: 1
+"Thu, 31 May 2018 13:14:40" - root - INFO - found model: User (table: users)
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 13:14:40" - root - INFO - found model: Blog (table: blogs)
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 13:14:40" - root - INFO - found model: Comment (table: comments)
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Thu, 31 May 2018 13:14:40" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 13:58:50" - root - INFO - found model: User (table: users)
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 13:58:50" - root - INFO - found model: Blog (table: blogs)
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 13:58:50" - root - INFO - found model: Comment (table: comments)
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Thu, 31 May 2018 13:58:50" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO - found model: User (table: users)
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: email ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: passwd ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: admin ==> <BooleanField, boolean:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO - found model: Blog (table: blogs)
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: summary ==> <StringField, varchar(200):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO - found model: Comment (table: comments)
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: blog_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: user_id ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: user_name ==> <StringField, varchar(50):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: user_image ==> <StringField, varchar(500):None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: content ==> <TextField, text:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO -   found mapping: created_at ==> <FloatField, real:None>
+"Thu, 31 May 2018 14:00:34" - root - INFO - create database connection pool...
+"Thu, 31 May 2018 14:00:34" - root - INFO - init jinja2...
+"Thu, 31 May 2018 14:00:34" - root - INFO - set jinja2 template path: d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\templates
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /api/blogs => api_blogs(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /api/comments => api_comments(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/blogs => api_create_blog(request, name, summary, content)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/blogs/{id}/comments => api_create_comment(id, request, content)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/blogs/{id}/delete => api_delete_blog(request, id)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/comments/{id}/delete => api_delete_comments(id, request)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /api/blogs/{id} => api_get_blog(id)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /api/users => api_get_users(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/users => api_register_user(email, name, passwd)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/blogs/{id} => api_update_blog(id, request, name, summary, content)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route POST /api/authenticate => authenticate(email, passwd)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /blog/{id} => get_blog(id)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET / => index(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /manage/ => manage()
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /manage/blogs => manage_blogs(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /manage/comments => manage_comments(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /manage/blogs/create => manage_create_blog()
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /manage/blogs/edit => manage_edit_blog(id)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /manage/users => manage_users(page)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /register => register()
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /signin => signin()
+"Thu, 31 May 2018 14:00:34" - root - INFO - add route GET /signout => signout(request)
+"Thu, 31 May 2018 14:00:34" - root - INFO - add static /static/ => d:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\www\static
+"Thu, 31 May 2018 14:00:34" - root - INFO - server started at http://127.0.0.1:9000...

@@ -3,7 +3,7 @@
 """
     info:web框架
         作用：避免用户在函数内重复对url和method进行判断，以及对特定response的包装
-        目标：实现url，method到函数的映射，让用户尽可能少的编写代码，直接操作method,url,response;
+            实现url，method到函数的映射，让用户尽可能少的编写代码，直接操作method,url,response;
          
 """
 __author__ = 'Michael Liao'
