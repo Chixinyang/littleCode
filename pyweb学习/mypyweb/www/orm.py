@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'Michael Liao'
 
 import asyncio
 import logging, logging.config
 import aiomysql
 
-logging.config.fileConfig(
-    "D:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\conf\logging.conf"
-)  # 采用配置文件,配置日志
-
+import os
+if os.name == 'posix':  #根据操作系统选取配置文件
+    LogConfPath="../conf/loggingLinux.conf"
+else :
+    LogConfPath = "..\conf\loggingWin.conf"
 
 def log(sql, args=()):
     logging.info('SQL: %s' % sql)
 
-
+#创建连接池，实现多用户访问的异步处理
 @asyncio.coroutine
 def create_pool(loop, **kw):
     logging.info('create database connection pool...')
-    global __pool
+    global __pool #定义全局变量连接池
     __pool = yield from aiomysql.create_pool(
         host=kw.get('host', 'localhost'),
         port=kw.get('port', 3306),
@@ -34,11 +34,11 @@ def create_pool(loop, **kw):
 
 
 @asyncio.coroutine
-def select(sql, args, size=None):
+def select(sql, args, size=None): #定义自己的select函数，
     log(sql, args)
     global __pool
     with (yield from __pool) as conn:
-        cur = yield from conn.cursor(aiomysql.DictCursor)
+        cur = yield from conn.cursor(aiomysql.DictCursor) #获取字典游标
         yield from cur.execute(sql.replace('?', '%s'), args or ())
         if size:
             rs = yield from cur.fetchmany(size)
@@ -69,7 +69,7 @@ def execute(sql, args, autocommit=True):
         return affected
 
 
-def create_args_string(num):
+def create_args_string(num): #根据参数个数添加问号
     L = []
     for n in range(num):
         L.append('?')
@@ -189,7 +189,7 @@ class Model(dict, metaclass=ModelMetaclass):
                 setattr(self, key, value)
         return value
 
-    @classmethod
+    @classmethod    #表明方法属于类而不属于对象
     @asyncio.coroutine
     def findAll(cls, where=None, args=None, **kw):
         ' find objects by where clause. '

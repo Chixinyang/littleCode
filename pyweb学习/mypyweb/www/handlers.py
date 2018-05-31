@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'Michael Liao'
 """
      用户自定义的根据method和url实现的处理函数 
 """

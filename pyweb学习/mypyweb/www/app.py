@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'Michael Liao'
 '''
 async web application.
 '''
@@ -21,9 +20,11 @@ from coroweb import add_routes, add_static
 
 from handlers import cookie2user, COOKIE_NAME
 # 采用配置文件,配置日志
-logging.config.fileConfig(
-    "D:\mydocument\GIT\mygit\littleCode\littleCode\mypy\mypyweb\conf\logging.conf"
-)
+if os.name == 'posix':  #根据操作系统选取配置文件
+    LogConfPath="../conf/loggingLinux.conf"
+else :
+    LogConfPath = "..\conf\loggingWin.conf"
+logging.config.fileConfig(LogConfPath)
 # create logger
 logger = logging.getLogger("simpleExample")  # 选取日志对象
 
@@ -67,14 +68,14 @@ def auth_factory(app, handler): #验证的中间操作
     def auth(request):
         logging.info('check user: %s %s' % (request.method, request.path))
         request.__user__ = None
-        cookie_str = request.cookies.get(COOKIE_NAME)
-        if cookie_str:
-            user = yield from cookie2user(cookie_str)
+        cookie_str = request.cookies.get(COOKIE_NAME) #从请求中提取COOKIE_NAME字段-》包含用户名和密码
+        if cookie_str:  #如果存在
+            user = yield from cookie2user(cookie_str) #在服务端创建用户的cookie
             if user:
-                logging.info('set current user: %s' % user.email)
-                request.__user__ = user
-        if request.path.startswith('/manage/') and (request.__user__ is None
-                                                    or request.__user__.admin):
+                logging.info('set current user: %s' % user.email) #打印user email
+                request.__user__ = user #想request中添加__user__
+        if request.path.startswith('/manage/') and (request.__user__ is None or request.__user__.admin):
+            #mangage 开始的界面 或者__user__不存在 或者管理员都调到登录页
             return web.HTTPFound('/signin')
         return (yield from handler(request))
 

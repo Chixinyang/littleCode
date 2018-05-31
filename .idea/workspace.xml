@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ac7b16e-6fb9-4c0b-9c24-ce1a126221fa" name="Default" comment="" />
+    <list default="true" id="5ac7b16e-6fb9-4c0b-9c24-ce1a126221fa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/conf/loggingWin.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/conf/logging.conf" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/conf/loggingLinux.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/log/static_log" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/log/static_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/config_default.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/config_default.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/config_override.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/config_override.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/coroweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/coroweb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyweb学习/mypyweb/www/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyweb学习/mypyweb/www/orm.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +23,72 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="78" column="32" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="32" />
+              <folding>
+                <element signature="e#108#138#0" expanded="true" />
+                <element signature="e#726#1680#0" />
+                <element signature="e#1751#1970#0" />
+                <element signature="e#2764#3360#0" />
+                <element signature="e#3422#5158#0" />
+                <element signature="e#5207#5556#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web_exceptions.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/soft/Anaconda3/Lib/site-packages/aiohttp/web_exceptions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handlers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/handlers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coroweb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/coroweb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-305">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#377#671#0" />
+                <element signature="e#703#990#0" />
+                <element signature="e#1026#1326#0" />
+                <element signature="e#1359#1563#0" />
+                <element signature="e#1596#1757#0" />
+                <element signature="e#1787#1947#0" />
+                <element signature="e#1978#2478#0" />
+                <element signature="e#2507#5353#0" />
+                <element signature="e#2552#2859#0" />
+                <element signature="e#2916#4437#0" />
+                <element signature="e#4165#4671#0" />
+                <element signature="e#4818#4965#0" />
+                <element signature="e#5044#5096#0" />
+                <element signature="e#5224#5402#0" />
+                <element signature="e#5636#6164#0" />
+                <element signature="e#5920#5956#0" />
+                <element signature="e#6212#6751#0" />
+                <element signature="e#6358#6486#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,11 +140,22 @@
         <option value="$PROJECT_DIR$/myPyQt/控件-显示图像.py" />
         <option value="$PROJECT_DIR$/myPyQt/控件-文本框.py" />
         <option value="$PROJECT_DIR$/myPyQt/控件-尺寸调节.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/conf/loggingWin.conf" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/models.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/config_override.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/config_default.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/config.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/python学习/mysql.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/orm.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/coroweb.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/handlers.py" />
+        <option value="$PROJECT_DIR$/pyweb学习/mypyweb/www/app.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1400" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="488" />
+    <option name="width" value="912" />
     <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -75,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,12 +174,40 @@
             <path>
               <item name="littleCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="littleCode" type="462c0819:PsiDirectoryNode" />
-              <item name="mypy" type="462c0819:PsiDirectoryNode" />
+              <item name="pyweb学习" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleCode" type="462c0819:PsiDirectoryNode" />
+              <item name="pyweb学习" type="462c0819:PsiDirectoryNode" />
+              <item name="mypyweb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleCode" type="462c0819:PsiDirectoryNode" />
+              <item name="pyweb学习" type="462c0819:PsiDirectoryNode" />
+              <item name="mypyweb" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleCode" type="462c0819:PsiDirectoryNode" />
+              <item name="pyweb学习" type="462c0819:PsiDirectoryNode" />
+              <item name="mypyweb" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="littleCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="littleCode" type="462c0819:PsiDirectoryNode" />
+              <item name="pyweb学习" type="462c0819:PsiDirectoryNode" />
+              <item name="mypyweb" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -110,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.开关按钮">
+  <component name="RunManager" selected="Python.mysql">
     <configuration name="控件-日历" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mygitlab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -309,12 +425,52 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mygitlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyweb学习/mypyweb/www" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyweb学习/mypyweb/www/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="mysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mygitlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyweb学习/python学习" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyweb学习/python学习/mysql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.开关按钮" />
       <item itemvalue="Python.控件-日历" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.mysql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mysql" />
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.控件-日历" />
         <item itemvalue="Python.开关按钮" />
       </list>
@@ -343,18 +499,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17237009" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5006337" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49936628" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.35630497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.30487806" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -379,60 +536,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myPyQt/控件-日历.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/框布局.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/控件-显示图像.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/改变字体.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/控件-文本框.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/绝对定位.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/框布局.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/表格布局一.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/表格布局二.py" />
-    <entry file="file://$PROJECT_DIR$/requ.py" />
-    <entry file="file://D:/soft/Anaconda3/Lib/http/cookiejar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36825">
-          <caret line="1473" column="13" selection-start-line="1473" selection-start-column="10" selection-end-line="1473" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/模拟登陆.py" />
-    <entry file="file://D:/soft/Anaconda3/Lib/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8175">
-          <caret line="327" selection-start-line="327" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/some.py" />
-    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/requests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1618">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/soft/Anaconda3/Lib/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7550">
-          <caret line="327" selection-start-line="327" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/soft/Anaconda3/Lib/http/cookiejar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36725">
-          <caret line="1473" column="13" selection-start-line="1473" selection-start-column="10" selection-end-line="1473" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/模拟登陆.py" />
-    <entry file="file://$PROJECT_DIR$/爬虫/some.py" />
-    <entry file="file://$PROJECT_DIR$/requ.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/图标.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/表格布局二.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/表格布局一.py" />
-    <entry file="file://$PROJECT_DIR$/myPyQt/绝对定位.py" />
     <entry file="file://$PROJECT_DIR$/myPyQt/菜单栏.py" />
     <entry file="file://$PROJECT_DIR$/myPyQt/工具栏.py" />
     <entry file="file://$PROJECT_DIR$/myPyQt/菜单和工具栏.py" />
@@ -478,5 +581,200 @@
     <entry file="file://$PROJECT_DIR$/myPyQt/改变字体.py" />
     <entry file="file://$PROJECT_DIR$/myPyQt/控件-文本框.py" />
     <entry file="file://$PROJECT_DIR$/myPyQt/控件-尺寸调节.py" />
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/conf/logging.conf" />
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/conf/loggingWin.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/log/static_log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/aiohttp/web_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/config_override.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/markdown2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/orm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="25" selection-start-line="25" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/python学习/sqlAlchemy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/python学习/mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-706">
+          <caret line="152" column="21" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="21" />
+          <folding>
+            <element signature="e#49#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="623" column="4" selection-start-line="623" selection-start-column="4" selection-end-line="623" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/pkgs/pandas-0.20.3-py36hce827b7_2/Lib/site-packages/pandas/core/strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="1759" lean-forward="true" selection-start-line="1759" selection-end-line="1759" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-861411949/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="167" column="4" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/config_default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="e#117#578#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/aiohttp/web_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="659" column="31" selection-start-line="659" selection-start-column="20" selection-end-line="659" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/requests/cookies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-669">
+          <caret line="502" column="62" selection-start-line="502" selection-start-column="53" selection-end-line="502" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="577" column="23" selection-start-line="577" selection-start-column="23" selection-end-line="577" selection-end-column="23" />
+          <folding>
+            <element signature="e#20016#20332#0" />
+            <element signature="e#20363#34002#0" />
+            <element signature="e#20658#22542#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/coroweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#377#671#0" />
+            <element signature="e#703#990#0" />
+            <element signature="e#1026#1326#0" />
+            <element signature="e#1359#1563#0" />
+            <element signature="e#1596#1757#0" />
+            <element signature="e#1787#1947#0" />
+            <element signature="e#1978#2478#0" />
+            <element signature="e#2507#5353#0" />
+            <element signature="e#2552#2859#0" />
+            <element signature="e#2916#4437#0" />
+            <element signature="e#4165#4671#0" />
+            <element signature="e#4818#4965#0" />
+            <element signature="e#5044#5096#0" />
+            <element signature="e#5224#5402#0" />
+            <element signature="e#5636#6164#0" />
+            <element signature="e#5920#5956#0" />
+            <element signature="e#6212#6751#0" />
+            <element signature="e#6358#6486#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/soft/Anaconda3/Lib/site-packages/aiohttp/web_exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb学习/mypyweb/www/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="78" column="32" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="32" />
+          <folding>
+            <element signature="e#108#138#0" expanded="true" />
+            <element signature="e#726#1680#0" />
+            <element signature="e#1751#1970#0" />
+            <element signature="e#2764#3360#0" />
+            <element signature="e#3422#5158#0" />
+            <element signature="e#5207#5556#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
