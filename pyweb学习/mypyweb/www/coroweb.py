@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 # -*- coding: utf-8 -*-
 """
     info:web框架
@@ -117,7 +117,6 @@ class RequestHandler(object): #处理request请求
                 qs = request.query_string #提取查询字符，The query string in the URL
                 if qs:
                     kw = dict()
-                        kw[k] = v[0]
                     for k, v in parse.parse_qs(qs, True).items():
                         kw[k] = v[0]
         if kw is None:
