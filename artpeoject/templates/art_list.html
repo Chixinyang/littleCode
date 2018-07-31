@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>list</title>
-</head>
-<body>
-list
-</body>
-</html>
+{% extends "layout.html"%}
+
+<!-- 更改表格中的元素居中显示，bootstrap默认是居顶显示-->
+    <!-- 使用浏览器检查元素，查找到元素样式。复制进来进行更改-->
+{% block css%}
+<style>
+    .table td, .table th {
+    vertical-align: middle;
+}
+</style>
+{% endblock%}
+
+{% block content%}
+{% for msg in get_flashed_messages(category_filter=["login ok"])%}
+            <p style="color:green">{{ msg }}</p>
+{%endfor%}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>标题</th>
+            <th>分类</th>
+            <th>封面</th>
+            <th>作者</th>
+            <th>发布时间</th>
+            <th>管理操作</th>
+        </tr>
+    </thead>
+    {% for v in range(1,11) %}
+    <tr>
+        <td>火星发现淡水</td>
+        <td>科技</td>
+        <td>
+            <img data-src="holder.js/75x40">
+        </td>
+        <td>未知</td>
+        <td>2018-06-21 23:00:00</td>
+        <td>
+            <button class="btn btn-sm btn-outline-warning">编辑</button>
+            <button class="btn btn-sm btn-outline-danger">删除</button>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<nav>
+    <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block js %}
+<script>
+    $(document).ready(function() {
+        $("#m2").addClass("active");
+    });
+</script>
+{% endblock %}
