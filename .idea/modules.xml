@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/微电影.iml" filepath="$PROJECT_DIR$/.idea/微电影.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/mygitlab.iml" filepath="$PROJECT_DIR$/.idea/mygitlab.iml" />
+>>>>>>> 94d66a06966866613937dc7dfc29eb2394bbf71d
     </modules>
   </component>
 </project>
